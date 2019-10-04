@@ -1,0 +1,15 @@
+# Jestを用いたJavaScriptのテストの研究
+
+## テストの準備
+
+`npm i`を実行します。
+
+## テストの実行
+
+`npm test`を実行します。  
+<img src="artwork/run_test_screen.png" srcset="artwork/run_test_screen.png 1x, artwork/run_test_screen_2x.png 2x">
+
+## メモ
+
+- `src/eventlist.js`をES2015+で記述すれば良かった
+- [Moment.js](https://momentjs.com/)を[Luxon](https://moment.github.io/luxon/index.html)に変更したい
