@@ -7,11 +7,12 @@
 ## テストの実行
 
 `npm test`を実行します。  
-`npm test -- --coverage`を実行するとカバレッジの取得もできます。（生成される`coverage/lcov-report/eventlist.js.html`が分かりやすい。）  
-<img src="artwork/run_test_screen.png" srcset="artwork/run_test_screen.png 1x, artwork/run_test_screen_2x.png 2x">
+<img src="artwork/run_test_screen.png" alt="Visual Studio Codeでコマンドを実行した画面">
+
+`npm test -- --coverage`を実行するとカバレッジの取得もできます。`coverage/lcov-report/eventlist.js.html`に生成されるHTMLをブラウザで開くと分かりやすいです。  
+<img src="artwork/coverage_html.png" alt="カバレッジをブラウザで表示した画面">
 
 ## メモ
 
-- `src/eventlist.js`をES2015+で記述すれば良かった
+- `src/eventlist.js`をES2015+で記述すれば良かったし、脱jQueryしたい
 - [Moment.js](https://momentjs.com/)を[Luxon](https://moment.github.io/luxon/index.html)に変更したい
-- 脱jQuery
