@@ -7,6 +7,7 @@
 ## テストの実行
 
 `npm test`を実行します。  
+`npm test -- --coverage`を実行するとカバレッジの取得もできます。（生成される`coverage/lcov-report/eventlist.js.html`が分かりやすい。）  
 <img src="artwork/run_test_screen.png" srcset="artwork/run_test_screen.png 1x, artwork/run_test_screen_2x.png 2x">
 
 ## メモ
