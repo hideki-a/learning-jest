@@ -13,3 +13,4 @@
 
 - `src/eventlist.js`をES2015+で記述すれば良かった
 - [Moment.js](https://momentjs.com/)を[Luxon](https://moment.github.io/luxon/index.html)に変更したい
+- 脱jQuery
