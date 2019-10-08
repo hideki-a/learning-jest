@@ -193,9 +193,7 @@ EventList.prototype = {
         return events.sort(function (a, b) {
             if (a.startDate > b.startDate) return 1;
             if (a.startDate < b.startDate) return -1;
-            if (a.id < b.id) return 1;
-            if (a.id > b.id) return -1;
-            return 0;
+            return b.id - a.id;
         });
     },
 
