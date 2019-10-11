@@ -218,16 +218,24 @@ EventList.prototype = {
         this.$elem.html(appendHTML);
     },
 
-    init: function () {
-        // 初期化
-        const self = this;
+    _getJSON: function () {
         const date = new Date();
         const dateSerial = date.getTime();
-
+        const defer = $.Deferred();
         $.ajax({
             url: this.eventDataURL + '?time=' + dateSerial,
             dataType: 'json'
         }).done(function (json) {
+            defer.resolve(json);
+        });
+        return defer.promise();
+    },
+
+    init: function () {
+        // 初期化
+        const self = this;
+        const promise = this._getJSON();
+        promise.done(function (json) {
             self.eventData = json;
             self._loadEvents();
             self._dispList();
