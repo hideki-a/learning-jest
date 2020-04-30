@@ -9,7 +9,7 @@
   "private": true,
   "devDependencies": {
     "jest": "^24.9.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "moment": "^2.24.0"
   }
 }
